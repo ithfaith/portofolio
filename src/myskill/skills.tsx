@@ -14,7 +14,7 @@ const SkillCard = ({ name, logo }: { name: string; logo: string }) => {
       style={{
         width: '250px',
         height: '150px',
-        backgroundColor: '#000',
+        backgroundColor: '#fff',
         backgroundImage: `url(${logo})`,
         backgroundSize: 'contain',
         backgroundPosition: 'right center',
