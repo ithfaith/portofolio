@@ -34,6 +34,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 h6 {
   font-size: 1.2em;
   line-height: 1.1;
@@ -55,6 +56,91 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+/* Container untuk membungkus teks */
+.typing-hai {
+  font-family: 'Ruslan Display', cursive;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden; /* Menyembunyikan teks yang belum diketik */
+  border-right: 3px solid; /* Memberikan efek kursor */
+  border-color: transparent;
+  width: 0; /* Awal dari lebar 0 */
+  animation: hihe 3.2s steps(13, end) forwards;
+}
+
+/* Efek mengetik */
+@keyframes hihe {
+  from { width: 0; }
+  to { width: 50%; } /* Setelah animasi, lebar teks mencapai penuh */
+}
+
+/* Efek kedipan kursor */
+@keyframes hehe {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(23 37 84); }
+}
+
+.typing-hi {
+  font-family: 'Courier', monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden; /* Menyembunyikan teks yang belum diketik */
+  border-right: 3px solid; /* Memberikan efek kursor */
+  border-color: transparent;
+  width: 0; /* Awal dari lebar 0 */
+  animation: hihi 3.2s steps(13, end) forwards;
+}
+
+/* Efek mengetik */
+@keyframes hihi {
+  from { width: 0; }
+  to { width: 48%; } /* Setelah animasi, lebar teks mencapai penuh */
+}
+
+/* Efek kedipan kursor */
+@keyframes hehe {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(23 37 84); }
+}
+
+.typewriter {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 250px;
+  height: 30px;
+  position: relative;
+}
+
+.typewriter span {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  animation: typing 4s steps(20) infinite, blinkCursor 0.75s step-end infinite;
+}
+
+.text-1 { animation-delay: 0s; }
+.text-2 { animation-delay: 4s; }
+
+@keyframes typing {
+  0% { width: 0; opacity: 1; }
+  50% { width: 100%; opacity: 1; }
+  60% { opacity: 0; }
+  100% { width: 100%; opacity: 0; }
+}
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+
+
+
+
 
 
 @media (prefers-color-scheme: light) {

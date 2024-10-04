@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -10,5 +11,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".typing-text", {
+        strings: [],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
   </body>
 </html>

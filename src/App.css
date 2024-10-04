@@ -76,8 +76,6 @@
   transition: all 500ms ease-in;
 }
 
-
-
 @keyframes fadeIn {
   0% {
     opacity: 0;

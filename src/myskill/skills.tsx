@@ -11,10 +11,12 @@ interface SkillCategory {
 const SkillCard = ({ name, logo }: { name: string; logo: string }) => {
   return (
     <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
       style={{
         width: '250px',
         height: '150px',
-        backgroundColor: '#000',
+        backgroundColor: 'bg-blue-950',
         backgroundImage: `url(${logo})`,
         backgroundSize: 'contain',
         backgroundPosition: 'right center',
@@ -24,7 +26,7 @@ const SkillCard = ({ name, logo }: { name: string; logo: string }) => {
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: '0 20px',
-        boxShadow: '0 0 10px rgba(255, 255, 255, 0.1)',
+        boxShadow: '#000',
         border: '1px solid rgba(255, 255, 255, 0.2)',
         margin: '10px',
       }}
@@ -69,7 +71,9 @@ const Skills = () => {
           <h2 className="text-2xl font-bold mb-4 text-center">{skillCategory.category}</h2>
           <div className="flex flex-wrap justify-center">
             {skillCategory.items.map((skill, i) => (
-              <SkillCard key={i} name={skill.name} logo={skill.logo} />
+              <div key={i} data-aos={i === 0 ? 'fade-up' : 'fade-up'} data-aos-duration="1500">
+                <SkillCard name={skill.name} logo={skill.logo} />
+              </div>
             ))}
           </div>
           {index < skills.length - 0 && (
@@ -83,4 +87,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
+
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollPos, setLastScrollPos] = useState(0);
@@ -62,7 +63,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost font-ruslan text-lg">Mochammad Faith</a>
+        <h3 className="font-ruslan text-lg typing-hai">Mochammad Faith</h3>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
