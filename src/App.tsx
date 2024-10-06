@@ -6,10 +6,7 @@ import Skills from './myskill/skills';
 import Footer from './page/footer'; // Import halaman Tentang
 import ContactForm from './contactform/contact';
 import Review from './review/review';
-import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
 
 const App = () => {
   return (

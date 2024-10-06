@@ -6,10 +6,10 @@ const ContactForm = () => {
   const [showForm, setShowForm] = useState(true);
   const [isSending, setIsSending] = useState(false);
 
-  const onChange = (event) =>
+  const onChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm((prevState) => ({ ...prevState, [event.target.name]: event.target.value }));
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSending(true);
     setResult("");
@@ -82,6 +82,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-
 
