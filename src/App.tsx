@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';  // Import komponen Hero
 import Tentang from './page/tentang'; 
