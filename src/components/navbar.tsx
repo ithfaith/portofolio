@@ -61,6 +61,9 @@ const Navbar = () => {
             <li>
               <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>Contact me</Link>
             </li>
+            <li>
+              <Link activeClass="active" to="review" spy={true} smooth={true} offset={-70} duration={500}>Reviews</Link>
+            </li>
           </ul>
         </div>
         <h3 className="font-ruslan text-lg typing-hai">Mochammad Faith</h3>
@@ -78,6 +81,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>Contact me</Link>
+          </li>
+          <li>
+            <Link activeClass="active" to="review" spy={true} smooth={true} offset={-70} duration={500}>Reviews</Link>
           </li>
         </ul>
       </div>

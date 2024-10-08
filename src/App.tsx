@@ -15,8 +15,8 @@ const App = () => {
       <Tentang />
       <Skills />
       <ContactForm />
-      <Footer />
       <Review />
+      <Footer />
     </div>
   );
 };

@@ -39,11 +39,11 @@ const Review = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center bg-blue-950 border-2 border-white p-4" id='review'>
             <h1 className="text-4xl font-bold mb-4">Reviews</h1>
             <form
                 onSubmit={handleSubmit}
-                className="flex flex-col w-full max-w-md mx-auto p-4 bg-white rounded-md shadow-md"
+                className="flex flex-col w-full max-w-md mx-auto p-8 bg-blue-950 rounded-md shadow-md border-2 border-white"
             >
                 <input
                     type="text"
@@ -51,18 +51,18 @@ const Review = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                    className="p-2 mb-2"
+                    className="p-4 mb-4 text-2xl"
                 />
                 <textarea
                     placeholder="Your Review"
                     value={review}
                     onChange={(e) => setReview(e.target.value)}
                     required
-                    className="p-2 mb-4"
+                    className="p-4 mb-8 text-2xl"
                 />
                 <button
                     type="submit"
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-md text-3xl"
                 >
                     Submit Review
                 </button>
@@ -88,4 +88,5 @@ const Review = () => {
 };
 
 export default Review;
+
 

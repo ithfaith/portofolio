@@ -37,7 +37,7 @@ const ContactForm = () => {
   return (
     <div className="flex items-center justify-center bg-blue-950 min-h-screen" id='contact'>
       {showForm && (
-        <form onSubmit={onSubmit} className="border-2 border-gray-700 p-4 rounded-md mb-4 flex flex-col items-center">
+        <form onSubmit={onSubmit} className="border-2 border-white p-4 rounded-md mb-4 flex flex-col items-center">
           <div className="grid grid-cols-1 gap-4">
             <div className="flex justify-center">
               <div>
@@ -50,20 +50,20 @@ const ContactForm = () => {
                 <label className="block mb-2">
                   Name:
                 </label>
-                <input type="text" name="name" value={form.name} onChange={onChange} placeholder="Your Name" required className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder-gray-400" />
+                <input type="text" name="name" value={form.name} onChange={onChange} placeholder="Your Name" required className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder-gray-400" />
               </div>
               <div>
                 <label className="block mb-2">
                   Email:
                 </label>
-                <input type="email" name="email" value={form.email} onChange={onChange} placeholder="Your Email" required className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder-gray-400" />
+                <input type="email" name="email" value={form.email} onChange={onChange} placeholder="Your Email" required className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder-gray-400" />
               </div>
             </div>
             <div>
               <label className="block mb-2">
                 Message:
               </label>
-              <textarea name="message" value={form.message} onChange={onChange} placeholder="Your Message" required className="w-full px-4 py-2 text-xl text-blue-950 bg-blue-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder-gray-400"></textarea>
+              <textarea name="message" value={form.message} onChange={onChange} placeholder="Your Message" required className="w-full px-4 py-2 text-xl text-blue-950 bg-blue-300 border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder-gray-400"></textarea>
             </div>
           </div>
 
@@ -82,4 +82,5 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
 

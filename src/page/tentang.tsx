@@ -1,13 +1,13 @@
-const Tentang = () => {
-    return (
-        <div className="hero w-screen min-h-screen bg-blue-950" id="tentang">
-  <div className="hero-content flex-col lg:flex-row-reverse border-2 border-white rounded-lg">
-    <div data-aos="fade-left" data-aos-duration="2000">
+const Tentang = () => (
+  <div className="hero w-screen min-h-screen bg-blue-950" id="tentang">
+    <div className="hero-content flex-col lg:flex-row-reverse border-2 border-white rounded-lg">
       <img
         src="./src/assets/faithpangalengan.jpg"
-        className="max-w-sm rounded-lg shadow-md hidden lg:block" />
-    </div>
-    <div className="hero-content text-center">
+        className="max-w-sm rounded-lg shadow-md hidden lg:block"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      />
+      <div className="hero-content text-center">
       <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold text-white">About me</h1>
       <p className="mb-5 text-white">
@@ -15,10 +15,9 @@ const Tentang = () => {
       </p>
       </div>
     </div>
+    </div>
   </div>
-</div>
-    );
-}
+);
 
 export default Tentang;
 
