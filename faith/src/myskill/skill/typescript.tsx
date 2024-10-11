@@ -17,7 +17,7 @@ const TypescriptPage: React.FC = () => {
         Typescript adalah bahasa pemrograman tingkat tinggi yang dikembangkan oleh Microsoft dan digunakan untuk membuat efek-efek yang dinamis dan interaktif dalam sebuah halaman web. Typescript dapat digunakan untuk membuat program yang berjalan di sisi klien (client-side) maupun di sisi server (server-side). Dengan menggunakan typescript, kita dapat membuat halaman web yang lebih interaktif dan dinamis, seperti membuat animasi, membuat efek hover, membuat form yang lebih canggih, dan masih banyak lagi. Bahkan, dengan menggunakan typescript, kita dapat membuat program yang berjalan di luar web, seperti membuat program desktop, membuat program mobile, dan masih banyak lagi.
         </p>
         <div className="lg:tooltip" data-tip="Back to Home">
-          <Link to="skills">
+          <Link to="/">
            <button className="btn">Back</button>
           </Link>
         </div>

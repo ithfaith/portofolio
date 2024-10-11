@@ -17,7 +17,7 @@ const ReactPage: React.FC = () => {
         React adalah library JavaScript yang dikembangkan oleh Facebook dan digunakan untuk membuat user interface yang interaktif dan dinamis. React dapat digunakan untuk membuat program yang berjalan di sisi klien (client-side) maupun di sisi server (server-side). Dengan menggunakan react, kita dapat membuat halaman web yang lebih interaktif dan dinamis, seperti membuat animasi, membuat efek hover, membuat form yang lebih canggih, dan masih banyak lagi.
         </p>
         <div className="lg:tooltip" data-tip="Back to Home">
-          <Link to="skills">
+          <Link to="/">
            <button className="btn">Back</button>
           </Link>
         </div>

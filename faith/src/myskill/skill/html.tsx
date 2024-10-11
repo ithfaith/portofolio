@@ -17,7 +17,7 @@ const HtmlPage: React.FC = () => {
         HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web. HTML digunakan untuk membuat struktur dan konten dari halaman web. Dengan menggunakan HTML, kita dapat membuat halaman web yang lebih interaktif dan dinamis, seperti membuat link, membuat gambar, membuat form, dan masih banyak lagi.
         </p>
         <div className="lg:tooltip" data-tip="Back to Home">
-          <Link to="skills">
+          <Link to="/">
            <button className="btn">Back</button>
           </Link>
         </div>
