@@ -1,0 +1,239 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.active {
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+.element {
+  animation: fadeIn 1s ease-in forwards;
+}
+/* App.css */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+/* App.css */
+.list-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: lightcoral;
+  color: white;
+}
+
+.item-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.item-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 500ms ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.hero-section {
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 6rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.hero-content::after {
+  content: 'is';
+  font-size: 25rem;
+  font-weight: bold;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  right: 10%;
+  top: 0;
+  z-index: 1;
+}
+
+.hero-text {
+  background-color: #111111;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #dddddd;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Add this to App.css or your TailwindCSS configuration for custom styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 640px;
+  background-color: #1e3a8a; /* Darker blue for form section */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+
+.bubble {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 15px;
+  border-radius: 25px;
+  position: relative;
+  max-width: 80%;
+  word-wrap: break-word;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-right: 15px solid #f0f0f0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.bubble p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.bubble strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.bubble button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reviews-wrapper {
+  width: 100%;
+  max-width: 640px;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+
