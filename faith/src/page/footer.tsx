@@ -4,7 +4,7 @@ const Footer = () => {
     return (
       <footer className="footer footer-center bg-gray-600 rounded p-10" id="footer">
       <nav className="grid grid-flow-col gap-4">
-      <div className="lg:tooltip" data-tip="Back">
+      <div className="lg:tooltip" data-tip="Back To Home">
       <h6 className="font-ruslan text-white"><Link activeClass="active" to="hero" spy={true} smooth={true} offset={-70} duration={500} className='desktopMenuListItem'>Mochammad Faith</Link></h6>
       </div>
       </nav>

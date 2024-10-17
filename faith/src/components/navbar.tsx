@@ -9,11 +9,10 @@ const Navbar = () => {
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
 
-    // Menyembunyikan navbar saat scroll ke bawah dan muncul saat scroll ke atas
     if (currentScrollPos > lastScrollPos) {
-      setIsVisible(false); // Scroll ke bawah -> sembunyikan
+      setIsVisible(false); 
     } else {
-      setIsVisible(true); // Scroll ke atas -> tampilkan
+      setIsVisible(true); 
     }
 
     setLastScrollPos(currentScrollPos);
@@ -22,7 +21,6 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup event listener saat komponen unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
