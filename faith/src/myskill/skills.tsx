@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 interface Skill {
   name: string;
   logo: string;
+  route: string;
 }
 
 interface SkillCategory {
@@ -40,28 +45,35 @@ const SkillCard = ({ name, logo, route }: Skill) => {
 };
 
 const Skills = () => {
-  const skills: SkillCategory[] = [
-    {
-      category: 'Programming Languages',
-      items: [
-        { name: 'JavaScript', logo: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', route: '/javascript' },
-        { name: 'TypeScript', logo: 'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', route: '/typescript' },
-      ],
-    },
-    {
-      category: 'Markup & Style',
-      items: [
-        { name: 'CSS', logo: 'https://cdn-icons-png.flaticon.com/512/732/732190.png', route: '/css' },
-        { name: 'HTML', logo: 'https://cdn-icons-png.flaticon.com/512/732/732212.png', route: '/html' },
-      ],
-    },
-    {
-      category: 'Libraries',
-      items: [
-        { name: 'React', logo: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png', route: '/react' },
-      ],
-    },
-  ];
+  const [skills, setSkills] = useState<SkillCategory[]>([]);
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+    const skillsData: SkillCategory[] = [
+      {
+        category: 'Programming Languages',
+        items: [
+          { name: 'JavaScript', logo: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', route: '/javascript' },
+          { name: 'TypeScript', logo: 'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', route: '/typescript' },
+        ],
+      },
+      {
+        category: 'Markup & Style',
+        items: [
+          { name: 'CSS', logo: 'https://cdn-icons-png.flaticon.com/512/732/732190.png', route: '/css' },
+          { name: 'HTML', logo: 'https://cdn-icons-png.flaticon.com/512/732/732212.png', route: '/html' },
+        ],
+      },
+      {
+        category: 'Libraries',
+        items: [
+          { name: 'React', logo: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png', route: '/react' },
+        ],
+      },
+    ];
+    setSkills(skillsData);
+  }, []);
 
   return (
     <div className="bg-blue-950 text-white min-h-screen p-8" id="skills">
@@ -89,3 +101,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
